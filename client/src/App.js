@@ -2,7 +2,10 @@
 function App() {
   return (
     <div className="App">
-      hello world!
+      Navabar
+      Header
+      Main
+      Footer
     </div>
   );
 }
