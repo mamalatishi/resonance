@@ -9,7 +9,7 @@ function Navbar() {
         console.log('handleSearchButton')
     }
     return (
-        <div className=''>
+        <div className='navbar'>
             <div className="container">
             <div className="brand">
                 <Link to='/'>
