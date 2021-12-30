@@ -1,0 +1,88 @@
+.header {
+    width:100vw;
+    height:40vh;
+
+    .container {
+        display:block;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    
+        .img-container {
+            display: block;
+            width:100vw;
+            height: 100%;
+            position: relative;
+            @media only screen and (min-width:1024px) {
+                display:flex;
+                width:100vw;
+                height: 100%;
+                flex-wrap: nowrap;
+                
+            }
+
+            img {
+                border: 2px solid pink;
+                height: 100%;
+                width: 100rem;
+                object-fit: cover;
+                
+
+            } 
+            
+            @media only screen and (max-width: 1024px) {
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+
+        .arrow-left {
+            position: absolute;
+            background:transparent;
+            border: none;
+            top: 10%;
+            left:0;
+        }
+
+        .arrow-right {
+            position: absolute;
+            background:transparent;
+            border: none;
+            top: 10%;
+            right: 0;
+        }
+
+        .img-content {
+            display: inline;
+            width:100%;
+            height:auto;
+            background-color:rgb(255, 51, 0);
+            color:Black;
+            text-align: center;
+            overflow:auto;
+            position:absolute;
+            top:70%;
+            left:50%;
+            transform: translate(-50%, -50%);
+
+            .img-description {
+                color:rgb(0, 0, 0);
+                width: 100%;
+                background-color:white;
+                font-family: 'Old Standard TT' , sans-serif;
+                font-size: 0.8rem;
+            }
+            .img-title {
+                font-family: 'Old Standard TT' , sans-serif;
+                font-weight: bold;
+                background-color:black;
+                color:orangered;
+            }
+        }
+    }
+    
+    
+}
+
+
