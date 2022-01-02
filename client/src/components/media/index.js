@@ -11,6 +11,7 @@ import pic10 from './pic10.jpg'
 import pic11 from './pic11.jpg'
 import pic12 from './pic12.jpg'
 import pic13 from './pic13.jpg'
+import bg1 from './bg1.jpg'
 
 const IMAGES_header = [
     {
@@ -75,5 +76,13 @@ const IMAGES = [
     
 ]
 
-export  {IMAGES_header};
+const IMAGES_bg = [
+    {
+        id:14,
+        name:'bg1',
+        src:bg1
+    }
+]
+
+export  {IMAGES_header,IMAGES_bg};
 export default IMAGES;

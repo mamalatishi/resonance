@@ -1,0 +1,84 @@
+.main {
+    background-size: cover;
+    background-position: center;
+    overflow:visible;
+
+    .container {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        height:25vh;
+
+    }
+    .brand-description {
+        font-family:'Franklin Gothic Medium', sans-serif;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        color:white;
+        font-size: 2rem;
+    }
+    .brand {
+        display:inline-block;
+        background-color:rgba(255, 51, 0, 0.658);
+        font-family: 'Flamenco' , sans-serif;
+        color:white;
+        font-weight: bold;
+
+    }
+    .section {
+
+    }
+    .main-container {
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 50% 50%;
+        height:20rem;
+        overflow:hidden;
+        @media only screen and (max-width:375px) {
+            display:block;
+            overflow: visible;
+            height:auto;
+        }
+        .section {
+            
+            
+            
+        }
+
+        .img-container {
+            position: relative;
+            height:20rem;
+            border:solid 3px white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            text-align: center;
+
+            @media only screen and (max-width:375px) {
+                position:relative;
+                height:10rem;
+                background-position:bottom;
+                margin-top:0px;
+                border-top:none;
+            }
+
+            .title-container{
+                display:flex;
+                justify-content:center;
+                justify-items: center;
+                align-content: center;
+
+                .img-title {
+                    position: absolute;
+                    top: 26%;
+                    text-align: center;
+                    color:white;
+                    background-color:rgba(0, 0, 0, 0.61);
+                }
+            }
+            
+        }
+    }
+}
