@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {IMAGES_bg} from '../media/index.js'
 import IMAGES from '../media/index';
 import './main.scss';
@@ -29,10 +30,18 @@ function Main() {
                 <div className='brand-description'> The <span className="brand">Resonance</span> Between Your <span style={{color:'orange'}}>Dreams</span> and <span style={{color:'#036687'}}>Reality</span></div>
             </div>
             <div className="main-container">
-                <Section title="This Month's Collection" img={IMAGES[2].src}/>
-                <Section title='Holy Sales' img={IMAGES[3].src}/>
-                <Section title='Categories to Infinite Possibilities!' img={IMAGES[6].src} />
-                <Section title='Find Our Social Media' img={IMAGES[8].src} />
+                <Link to='/products?q=collection'>
+                    <Section title="This Month's Collection" img={IMAGES[2].src}/>
+                </Link>
+                <Link to='/products?q=sale'>
+                    <Section title='Holy Sales' img={IMAGES[3].src}/>
+                </Link>
+                <Link to='/products?q=categories'>
+                    <Section title='Categories to Infinite Possibilities!' img={IMAGES[6].src} />
+                </Link>
+                <Link to='/about-us'>
+                    <Section title='Find Our Social Media' img={IMAGES[8].src} />
+                </Link>
             </div>
         </div>
     )
