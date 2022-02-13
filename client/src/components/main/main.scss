@@ -2,7 +2,9 @@
     background-size: cover;
     background-position: center;
     overflow:visible;
-
+    width: 100%;
+    background-color: pink;
+    
     .container {
         display: flex;
         align-items: center;
@@ -27,24 +29,22 @@
         font-weight: bold;
 
     }
-    .section {
 
-    }
     .main-container {
         display:grid;
         grid-template-columns:50% 50%;
         grid-template-rows: 50% 50%;
-        height:20rem;
+        height:17.4rem;
+        margin-bottom:3px;
         overflow:hidden;
+        a {
+            text-decoration: none;
+        }
+
         @media only screen and (max-width:375px) {
             display:block;
             overflow: visible;
             height:auto;
-        }
-        .section {
-            
-            
-            
         }
 
         .img-container {
@@ -65,17 +65,23 @@
             }
 
             .title-container{
-                display:flex;
-                justify-content:center;
-                justify-items: center;
-                align-content: center;
-
+                    position: relative;
                 .img-title {
-                    position: absolute;
-                    top: 26%;
                     text-align: center;
-                    color:white;
-                    background-color:rgba(0, 0, 0, 0.61);
+                    position: absolute;
+                    text-align: center;
+                    top:17px;
+                    left:15px;
+                    font-size: 1.6em;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    color:rgb(207, 113, 25);
+                    text-shadow:2px 2px black ;
+                    text-decoration: none;
+                }
+                .center  {
+                    position: absolute;
+                    left:10px;
+                    top:10px;
                 }
             }
             

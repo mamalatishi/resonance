@@ -33,14 +33,14 @@ function Main() {
                 <Link to='/products?q=collection'>
                     <Section title="This Month's Collection" img={IMAGES[2].src}/>
                 </Link>
-                <Link to='/products?q=sale'>
+                <Link  to='/products?q=sale'>
                     <Section title='Holy Sales' img={IMAGES[3].src}/>
                 </Link>
                 <Link to='/products?q=categories'>
                     <Section title='Categories to Infinite Possibilities!' img={IMAGES[6].src} />
                 </Link>
                 <Link to='/about-us'>
-                    <Section title='Find Our Social Media' img={IMAGES[8].src} />
+                    <Section title='Subscribe to not miss out!' img={IMAGES[8].src} />
                 </Link>
             </div>
         </div>

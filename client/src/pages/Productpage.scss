@@ -1,0 +1,56 @@
+.productPage {
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(185, 192, 93, 0.781);
+    @media (min-width:1024px) {
+        flex-direction:row;
+    }
+
+    .image-container {
+        height:50%;
+        margin: 20px;
+
+        @media (min-width: 1024px) {
+            width:50%
+        }
+    }
+
+    .image-description {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(251, 255, 200);
+        .image-title {
+            background-color: orange;
+            padding: 0 auto 0 auto;
+        }
+
+        .image-price {
+            background-color:rgb(255, 251, 0);
+        }
+    }
+
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        padding:5rem;
+        margin: 20px;
+        border:rgb(88, 82, 82) 2px solid;
+        .quantity-title {
+            display:inline;
+        }
+
+        input {
+            width:33px;
+
+        }
+        button {
+            display:block;
+            padding-left: 7px;
+            margin-left: 7px;
+            margin-top: 7px;
+        }
+    }
+}

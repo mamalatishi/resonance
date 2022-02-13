@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 code {
@@ -47,7 +50,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  /*min-height: 100vh;*/
+  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   /*height:100vh;

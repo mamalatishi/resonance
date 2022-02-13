@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {HiOutlineShoppingCart,HiSearch,HiUser} from 'react-icons/hi';
+import {HiOutlineShoppingCart,HiSearch,HiUser,HiMenu} from 'react-icons/hi';
 import './navbar.scss';
 
 function Navbar() {
@@ -18,7 +18,8 @@ function Navbar() {
             </div>
             <button onClick={handleSearchButton}><HiSearch/></button>
             <Link to='/user'><HiUser/></Link>
-            <Link to='/shoppingcard'><HiOutlineShoppingCart/></Link>
+            <Link to='/cart'><HiOutlineShoppingCart/></Link>
+            <button ><HiMenu/></button>
             </div>
         </div>
     )
