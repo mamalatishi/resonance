@@ -36,7 +36,7 @@ function Main() {
                 <Link  to='/products?q=sale'>
                     <Section title='Holy Sales' img={IMAGES[3].src}/>
                 </Link>
-                <Link to='/products?q=categories'>
+                <Link to='/categories'>
                     <Section title='Categories to Infinite Possibilities!' img={IMAGES[6].src} />
                 </Link>
                 <Link to='/about-us'>

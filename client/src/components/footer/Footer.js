@@ -11,8 +11,6 @@ function Footer() {
                     <Link to="#">Contact us</Link>
                 </div>
                 <div className="container-left">
-                    <Link to="#">Homepage</Link>
-                    <Link to="#">Categories</Link>
                 </div>
                 <div className="container-center">
                     <p>© 2020 Resonance - All rights reserved</p>
