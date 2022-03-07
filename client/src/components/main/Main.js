@@ -40,7 +40,7 @@ function Main() {
                     <Section title='Categories to Infinite Possibilities!' img={IMAGES[6].src} />
                 </Link>
                 <Link to='/about-us'>
-                    <Section title='Subscribe to not miss out!' img={IMAGES[8].src} />
+                    <Section title='Subscribe not to miss out!' img={IMAGES[8].src} />
                 </Link>
             </div>
         </div>

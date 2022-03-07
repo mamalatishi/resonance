@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import pic16 from '../components/media/pic16.jpg'
 import pic17 from '../components/media/pic17.jpg'
 import pic18 from '../components/media/pic18.jpg'
@@ -8,10 +9,12 @@ import './Categorypage.scss'
 function CategoryItem({src,name}) {
     return(
         <div className="categoryItem">
-            <img src={src} alt={name} />
-            <div className="title-container">
-            <span>{name}</span>
-            </div>
+            <Link to='/products'>
+                <img src={src} alt={name} />
+                <div className="title-container">
+                    <span>{name}</span>
+                </div>
+            </Link>
         </div>
     )
 }

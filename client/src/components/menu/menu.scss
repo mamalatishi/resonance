@@ -1,0 +1,102 @@
+.menu {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right:0;
+    width:50vw;
+    height:minmax(50,);
+    background-color: rgba(255, 255, 255, 0.76);
+    z-index: 40;
+    transform: translateX(100vw);
+    transition: all 0.3s ease-out;
+    .container--grid {
+        display:grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        row-gap: 1rem;
+        margin:10px;
+        .menu_container--men {
+            font-size:1.3rem;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            .menu_title--clothing {
+                font-size:0.8rem;
+            }
+            .menu_title--shoes {
+                font-size:0.8rem;
+
+            }
+            .menu_title--sale {
+                font-size:0.8rem;
+
+            }
+        }
+        .menu_container--women {
+            font-size:1.3rem;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            .menu_title--clothing {
+                font-size:0.8rem;
+
+            }
+            .menu_title--shoes {
+                font-size:0.8rem;
+
+            }
+            .menu_title--sale {
+                font-size:0.8rem;
+                
+            }
+            
+        }
+        .menu_container--kids {
+            font-size:1.3rem;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            .menu_title--clothing {
+                font-size:0.8rem;
+
+            }
+            .menu_title--shoes {
+                font-size:0.8rem;
+
+            }
+            .menu_title--sale {
+                font-size:0.8rem;
+                
+            }
+            
+        }
+        .menu_container--sale {
+            font-size:1.3rem;
+            padding-bottom: 10px;
+            .menu_title--clothing {
+                font-size:0.8rem;
+
+            }
+            .menu_title--shoes {
+                font-size:0.8rem;
+
+            }
+            
+        }
+        @media only screen and (max-width: 700px) {
+            display:flex;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+            color:black;
+        }
+        a:visited {
+            color:black;
+        }
+    }
+}
+
+.menuOpen {
+    transform: translateX(0);    
+}
+.menuClose {
+    transform: translateX(100vw);
+}
